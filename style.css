@@ -1,0 +1,145 @@
+@font-face {
+  font-family: BebasNeue;
+  src:url(BebasNeue-Regular.ttf);
+}
+
+@font-face{
+  font-family: Louise;
+  src:url(Louise-Regular.otf)
+  
+}
+
+body{
+  background-color: #1a181b;
+}
+
+h1{
+  font-family: Louise;
+  font-size: 100px;
+  text-align: center;
+  color: #ffef9e;
+}
+
+h2{
+  font-family: BebasNeue;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h3{
+  text-align: center;
+  color: #ffffff
+}
+
+ul{
+  cursor: pointer;
+  list-style-position: inside;
+  font-family: bebasneue;
+  font-size: 40px;
+  color: #2e2e2e;}
+
+li{
+  transition: font-size 1s ease, color 1s ease;
+}
+
+li:hover {
+  color: white;
+  font-size: 50px;
+  transition: 1s ease
+}
+
+#motivos {
+  cursor: pointer;
+  position: relative;
+  display: flexbox;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: louise;
+  text-align: center;
+  justify-content: center;
+  color: #ffef9e
+}
+
+span {
+  position: relative;
+  transition: all 1s ease
+}
+
+span:hover{
+  color: white;
+}
+
+span::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+span:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.wrapper {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+i {
+  font-size: 7.5em;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+}
+h2 {
+  font-size: 3em;
+  text-align: center;
+  color: #ffffff;
+}
+.btn-group {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  text-align: center;
+}
+button {
+  position: absolute;
+  width: 150px;
+  height: inherit;
+  font-size: 1.2em;
+  color: #000000;
+  font-weight: 600;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+button:nth-child(1) {
+  margin-left: -200px;
+  background: #ffef9e;
+  outline: none;
+  text-align: center;
+}
+button:nth-child(2) {
+  margin-right: -200px;
+  color: #000000;
+  outline: none;
+  text-align: center;
+  transition: all .4s ease
+}
